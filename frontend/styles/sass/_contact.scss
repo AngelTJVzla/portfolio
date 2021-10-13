@@ -1,0 +1,98 @@
+section.contact {
+
+    gap: $gap;
+
+    height: calc(100vh - 100px);
+
+    padding-top: $gap * 4;
+
+    form.form {
+
+        width: fit-content;
+
+        h1 {
+
+            font-weight: 700;
+            font-size: 52px;
+            color: $clr--white;
+
+        }
+
+        fieldset {
+
+            display: flex;
+            flex-direction: column;
+            gap: $gap;
+
+            padding: $gap;
+
+            color: $clr--white;
+
+            input,
+            textarea {
+
+                padding: 8px;
+
+                border: none;
+                border-bottom: 1px solid $clr--secondary;
+
+                color: $clr--white;
+
+                background-color: $clr--primary;
+
+                outline: none;
+                resize: none;
+
+                &::placeholder {
+
+                    color: $clr--opaque;
+
+                }
+
+            }
+
+        }
+
+        button.button {
+
+            width: 150px;
+
+            margin-right: $gap;
+
+        }
+
+        button.button-cancel {
+
+            background-color: $clr--red;
+
+            animation: none;
+
+        }
+
+    }
+
+    section.map {
+
+
+        h1 {
+
+            font-weight: 700;
+            font-size: 52px;
+            color: $clr--white;
+
+        }
+
+        div.map-wrapper {
+
+            width: 800px;
+            aspect-ratio: 16 / 9;
+
+            margin-top: $gap * 2;
+
+            background-color: $clr--secondary;
+
+        }
+
+    }
+
+}

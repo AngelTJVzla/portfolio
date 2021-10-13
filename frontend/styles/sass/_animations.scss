@@ -1,0 +1,58 @@
+@keyframes btnUp {
+
+    from {
+
+        transform: translateY(0px) scale(1);
+
+        box-shadow: 0 0 0 0 $clr--highlight;
+
+    }
+    to {
+
+        transform: translateY(-10px) scale(1.1);
+
+        box-shadow: 0 0 25px 3px $clr--highlight;
+
+    }
+    
+}
+
+@keyframes btnEffect {
+    
+    0% {
+
+        // border: 0 solid $clr--highlight;
+
+        box-shadow: 0 0 0 0 $clr--highlight;
+
+        transform: translateY(0px) scale(1);
+
+        // opacity: 0;
+
+    }
+    70% {
+
+        // border: 1px solid $clr--highlight;
+
+        box-shadow: 0 0 30px 5px $clr--highlight;
+
+        // transform: scale(1.1);
+
+        // opacity: .8;
+
+    }
+    100% {
+
+        // border: 0 solid $clr--highlight;
+
+        box-shadow: 0 0 0 0 $clr--highlight;
+
+        transform: translateY(-10px) scale(1.1);
+
+        // opacity: 0;
+
+        // transform: scale(1.1);
+
+    }
+
+}

@@ -1,0 +1,180 @@
+html {
+
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background: $clr--primary; 
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: $clr--highlight; 
+        border-radius: $radius;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: $clr--primary; 
+    }
+
+}
+
+body {
+
+    font-family: $font--main;
+
+    background-color: $clr--primary;
+
+    scroll-behavior: smooth;
+
+}
+
+header.header {
+
+    position: fixed;
+
+    justify-content: flex-end;
+
+    width: 100%;
+    height: 100px;
+
+    background-color: inherit;
+
+    nav.header-nav {
+
+        height: inherit;
+
+        background-color: inherit;
+
+        ul.nav-items {
+
+            height: inherit;
+
+            align-items: center;
+            justify-content: space-evenly;
+
+            li.nav-item {
+
+                position: relative;
+
+                display: flex;
+                align-items: center;
+
+                height: inherit;
+
+                text-align: center;
+
+                &::after {
+
+                    content: '';
+
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+
+                    width: 100%;
+                    height: 0px;
+
+                    background-color: $clr--highlight;
+
+                    transition: all .3s;
+
+                }
+
+                &:hover::after {
+
+                    height: 2px;
+
+                }
+
+                &-active::after {
+
+                    content: '';
+
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+
+                    width: 100%;
+                    height: 2px;
+
+                    background-color: $clr--highlight;
+
+                    transition: all .5s;
+
+                }
+
+                a {
+
+                    width: 100%;
+                    height: inherit;
+
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    line-height: 100px;
+                    color: $clr--secondary;
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+button.button {
+
+    position: relative;
+
+    padding: 16px 24px;
+
+    border: none;
+    border-radius: $radius * 4;
+
+    background-color: $clr--highlight;
+
+    a {
+
+        text-decoration: none;
+
+        color: $clr--primary;
+
+    }
+
+    &:hover {
+
+        animation: btnUp .2s forwards;
+
+        &::after {
+
+            animation: btnUp .2s forwards;
+    
+        }
+
+    }
+
+    &::after {
+
+        content: '';
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        width: 100%;
+        height: 100%;
+
+        border: none;
+        border-radius: inherit;
+    
+        background-color: $clr--highlight;
+
+        opacity: 0;
+
+    }
+
+}

@@ -1,0 +1,110 @@
+section.about {
+
+    display: grid;
+    gap: $gap;
+    grid-template-rows: 250px 1fr;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+        'img about'
+        'img technologies';
+
+    width: 100%;
+    height: calc(100vh - 100px);
+
+    padding-top: $gap * 4;
+
+    color: $clr--white;
+
+    background-color: $clr--primary;
+
+    img.profile-img {
+
+        grid-area: img;
+
+        width: 300px;
+        aspect-ratio: 1;
+
+        border-radius: 50%;
+
+    }
+
+    section.about-me {
+
+        grid-area: about;
+
+        height: 250px;
+
+        padding: $gap;
+
+        h1 {
+
+            margin-bottom: $gap;
+
+            font-size: 56px;
+            font-weight: 700;
+
+        }
+
+        p {
+
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: justify;
+
+        }
+
+    }
+
+    section.technologies {
+
+        grid-area: technologies;
+
+        height: 250px;
+
+        padding: $gap;
+        
+        h1 {
+
+            margin-bottom: $gap;
+
+            font-size: 56px;
+            font-weight: 700;
+
+        }
+
+        ul.technologies-wrapper {
+
+
+
+            li.technology {
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                svg.svg {
+
+                    display: block;
+                
+                    width: 96px;
+                    aspect-ratio: 1;
+                
+                }
+                
+                h2 {
+
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 32px;
+                    text-align: justify;
+        
+                }
+
+            }
+
+        }
+
+    }
+
+}
