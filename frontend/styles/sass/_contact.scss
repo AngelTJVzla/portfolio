@@ -9,6 +9,7 @@ section.contact {
     form.form {
 
         width: fit-content;
+        height: fit-content;
 
         h1 {
 
@@ -87,7 +88,7 @@ section.contact {
             width: 800px;
             aspect-ratio: 16 / 9;
 
-            margin-top: $gap * 2;
+            margin-top: $gap;
 
             background-color: $clr--secondary;
 
